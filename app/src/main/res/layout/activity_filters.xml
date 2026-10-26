@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F3EF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filter PGs"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#3C2F2F"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Locality -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Locality"
+            android:textStyle="bold"
+            android:textColor="#3C2F2F" />
+
+        <Spinner
+            android:id="@+id/spinnerLocality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Floor -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Floor Preference"
+            android:textStyle="bold"
+            android:textColor="#3C2F2F" />
+
+        <Spinner
+            android:id="@+id/spinnerFloor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Gender -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender Restriction"
+            android:textStyle="bold"
+            android:textColor="#3C2F2F" />
+
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <!-- In-time -->
+        <CheckBox
+            android:id="@+id/checkHasInTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show only PGs with an In-time rule"
+            android:textColor="#3C2F2F"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Rent Range -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rent Range (₹)"
+            android:textStyle="bold"
+            android:textColor="#3C2F2F" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/editMinRent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="Min"
+                android:padding="8dp"
+                android:background="@android:drawable/edit_text"
+                android:textColor="#3C2F2F" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  -  "
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="#3C2F2F" />
+
+            <EditText
+                android:id="@+id/editMaxRent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="Max"
+                android:padding="8dp"
+                android:background="@android:drawable/edit_text"
+                android:textColor="#3C2F2F" />
+        </LinearLayout>
+
+        <!-- Meals -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meals Provided"
+            android:textStyle="bold"
+            android:textColor="#3C2F2F"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkBreakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breakfast"
+            android:textColor="#3C2F2F" />
+
+        <CheckBox
+            android:id="@+id/checkLunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lunch"
+            android:textColor="#3C2F2F" />
+
+        <CheckBox
+            android:id="@+id/checkDinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dinner"
+            android:textColor="#3C2F2F"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Action Buttons -->
+        <Button
+            android:id="@+id/btnApplyFilters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apply Filters"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3C2F2F"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnClearFilters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear Filters"
+            android:textAllCaps="false"
+            android:textColor="#3C2F2F"
+            android:backgroundTint="#E0E0E0" />
+
+    </LinearLayout>
+</ScrollView>

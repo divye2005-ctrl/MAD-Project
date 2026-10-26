@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F3EF"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- PG Image Preview -->
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_home"
+            android:background="#E6DED8"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="PG Preview" />
+
+        <!-- Upload Buttons -->
+        <Button
+            android:id="@+id/btnUploadImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload from Gallery"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#7B5E57"
+            android:fontFamily="@font/poppins_medium" />
+
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Take Photo"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#A28D85"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="8dp" />
+
+        <!-- PG Name -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PG Name"
+            android:inputType="textCapWords"
+            android:backgroundTint="#E6DED8"
+            android:textColor="#3C2F2F"
+            android:textColorHint="#7D6E67"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginTop="20dp" />
+
+        <!-- Rent -->
+        <EditText
+            android:id="@+id/etRent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rent (₹)"
+            android:inputType="number"
+            android:backgroundTint="#E6DED8"
+            android:textColor="#3C2F2F"
+            android:textColorHint="#7D6E67"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginTop="12dp" />
+
+        <!-- Locality -->
+        <EditText
+            android:id="@+id/etLocality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Locality"
+            android:backgroundTint="#E6DED8"
+            android:textColor="#3C2F2F"
+            android:textColorHint="#7D6E67"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginTop="12dp" />
+
+        <!-- Address -->
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:backgroundTint="#E6DED8"
+            android:textColor="#3C2F2F"
+            android:textColorHint="#7D6E67"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginTop="12dp" />
+
+        <!-- Contact -->
+        <EditText
+            android:id="@+id/etContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact Number"
+            android:inputType="phone"
+            android:backgroundTint="#E6DED8"
+            android:textColor="#3C2F2F"
+            android:textColorHint="#7D6E67"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginTop="12dp" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Changes"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#7B5E57"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="20dp" />
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete PG"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#B71C1C"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+</ScrollView>

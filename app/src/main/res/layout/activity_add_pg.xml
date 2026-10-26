@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F7F3EF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText android:id="@+id/inputPGName" android:hint="PG Name"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/inputAddress" android:hint="Address"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <Spinner android:id="@+id/spinnerLocality"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+
+        <Spinner android:id="@+id/spinnerFloor"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+
+        <EditText android:id="@+id/inputRent" android:hint="Rent (₹)"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number"/>
+
+        <EditText android:id="@+id/inputContact" android:hint="Contact Number"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="phone"/>
+
+        <TextView android:text="Gender Restriction" android:textStyle="bold"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+        <Spinner android:id="@+id/spinnerGender"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <CheckBox android:id="@+id/checkHasInTime" android:text="Has In-time rule"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/btnSelectInTime" android:text="Select In-time"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:text="Meals" android:textStyle="bold"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+        <CheckBox android:id="@+id/checkBreakfast" android:text="Breakfast" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <CheckBox android:id="@+id/checkLunch" android:text="Lunch" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <CheckBox android:id="@+id/checkDinner" android:text="Dinner" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:text="Food Preferences" android:textStyle="bold"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+        <CheckBox android:id="@+id/checkVeg" android:text="Vegetarian" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <CheckBox android:id="@+id/checkNonVeg" android:text="Non-Veg Allowed" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:text="Amenities" android:textStyle="bold"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+        <CheckBox android:id="@+id/checkKitchen" android:text="Kitchen Access" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <CheckBox android:id="@+id/checkInduction" android:text="Induction Provided" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <CheckBox android:id="@+id/checkIron" android:text="Iron Available" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <CheckBox android:id="@+id/checkOvernight" android:text="Overnight Pass Available" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnSavePG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save PG"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#7B5E57"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

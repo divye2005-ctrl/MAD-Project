@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="localities">
+        <item>Andheri West</item>
+        <item>Andheri East</item>
+        <item>Bandra West</item>
+        <item>Bandra East</item>
+        <item>Juhu</item>
+        <item>Powai</item>
+        <item>Vile Parle West</item>
+        <item>Vile Parle East</item>
+        <item>Santacruz West</item>
+        <item>Santacruz East</item>
+        <item>Dadar West</item>
+        <item>Dadar East</item>
+        <item>Kurla West</item>
+        <item>Chembur</item>
+        <item>Goregaon West</item>
+        <item>Goregaon East</item>
+        <item>Malad West</item>
+        <item>Malad East</item>
+        <item>Borivali West</item>
+        <item>Borivali East</item>
+        <item>Colaba</item>
+        <item>Fort</item>
+        <item>Lower Parel</item>
+        <item>Worli</item>
+        <item>Vashi (Navi Mumbai)</item>
+        <item>Thane West</item>
+    </string-array>
+
+    <string-array name="floor_array">
+        <item>Ground Floor</item>
+        <item>1st Floor</item>
+        <item>2nd Floor</item>
+        <item>3rd Floor</item>
+        <item>Above 3rd Floor</item>
+    </string-array>
+
+    <array name="default_rent_values">
+        <item>10000</item>
+        <item>90000</item>
+    </array>
+</resources>

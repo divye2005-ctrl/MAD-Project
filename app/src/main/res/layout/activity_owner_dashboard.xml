@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F3EF">
+
+    <!-- 🔹 Top App Bar with Logout -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:title="Your PGs"
+        android:titleTextColor="#3C2F2F"
+        app:menu="@menu/menu_logout"
+        app:titleCentered="true"
+        app:elevation="4dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="12dp">
+
+        <!-- 🔹 Add PG Button -->
+        <Button
+            android:id="@+id/btnAddPg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+ Add PG"
+            android:backgroundTint="#7B5E57"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="12dp"
+            android:elevation="3dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:padding="10dp" />
+
+        <!-- 🔹 Empty State Message -->
+        <TextView
+            android:id="@+id/tvEmptyOwner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No PGs added yet 👀"
+            android:textColor="#7B5E57"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="100dp"/>
+
+        <!-- 🔹 RecyclerView for PG list -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvOwnerPGs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:scrollbars="vertical"/>
+    </LinearLayout>
+
+    <!-- 🔹 Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        app:itemIconTint="@color/selector_bottom"
+        app:itemTextColor="@color/selector_bottom"
+        app:menu="@menu/menu_owner_bottom"
+        android:elevation="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
